@@ -1,0 +1,102 @@
+/* Thème Dark Mode Professionnel */
+:root {
+    --bg-color: #000000;       /* Noir profond */
+    --text-color: #ffffff;     /* Blanc pur */
+    --accent-color: #3498db;   /* Bleu pour les liens et boutons */
+    --card-bg: #1a1a1a;        /* Gris très foncé pour les cartes */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+    header {
+    height: 250px; /* Hauteur de l'en-tête */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Image de fond avec superposition sombre */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../assets/header-bg.jpg');
+    
+    background-size: cover;       /* L'image couvre tout l'espace */
+    background-position: center;  /* L'image est centrée */
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo {
+    font-size: 1.5rem; /* Taille réduite (avant c'était 2.5rem) */
+    font-weight: 800;
+    letter-spacing: 1px; /* Réduit aussi l'espace entre les lettres si besoin */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+.university-tag {
+    font-size: 0.9rem;       /* Taille plus petite que le logo */
+    color: #cccccc;          /* Gris clair pour un look élégant */
+    margin-top: 5px;         /* Petit espace sous le logo */
+    font-style: italic;      /* Italique pour le côté académique */
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Optionnel : Ajustement pour mobile */
+@media (max-width: 600px) {
+    .university-tag {
+        font-size: 0.8rem;   /* Encore un peu plus petit sur téléphone */
+    }
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+/* Section Biographie */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Pour que ça s'adapte sur mobile */
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Image ronde */
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+}
+
+.bio-text {
+    max-width: 600px;
+}
+
+/* Style des cartes de cours */
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Footer avec liens de contact */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 50px;
+}
+
+.contact-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
