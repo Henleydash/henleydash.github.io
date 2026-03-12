@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir un cours | TechExpert</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: #000 !important; color: white !important; }
+        .selection-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+        .choice-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 15px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .choice-card:hover { border-color: #3498db; }
+        .icon { font-size: 3rem; margin-bottom: 10px; }
+        .btn-choice {
+            display: block;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="selection-container">
+        <a href="../index.html" style="color: #666; text-decoration: none; margin-bottom: 30px;">← Retour à l'accueil</a>
+        
+        <h1>Que voulez-vous apprendre ?</h1>
+        <p>Sélectionnez un langage pour débuter votre formation.</p>
+
+        <div class="choice-card">
+            <div class="icon">⚙️</div>
+            <h3>Langage C</h3>
+            <p>Le langage fondamental enseigné à l'UTS. Idéal pour comprendre le matériel.</p>
+            <a href="langage-c.html" class="btn-choice">Choisir le C</a>
+        </div>
+
+        <div class="choice-card">
+            <div class="icon">🐍</div>
+            <h3>Python</h3>
+            <p>Le langage moderne pour l'IA et l'automatisation. Simple et puissant.</p>
+            <a href="python.html" class="btn-choice" style="background: #f1c40f; color: #000;">Choisir Python</a>
+        </div>
+    </div>
+
+</body>
+</html>
