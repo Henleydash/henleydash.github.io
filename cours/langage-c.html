@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de Langage C | UTS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Style spécifique pour le cours de C */
+        body { background-color: #f9f9f9 !important; color: #2c3e50 !important; }
+        
+        .course-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Style pour les blocs de code */
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto; /* Pour mobile si le code est long */
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 5px solid #3498db;
+        }
+
+        .keyword { color: #66d9ef; } /* Bleu pour les types */
+        .function { color: #a6e22e; } /* Vert pour les fonctions */
+        .comment { color: #75715e; } /* Gris pour les commentaires */
+    </style>
+</head>
+<body>
+
+    <div class="course-container">
+        <a href="../index.html" style="color: #3498db; text-decoration: none;">← Retour à l'accueil</a>
+        
+        <header style="background: none; color: #2c3e50; border: none; text-align: left; padding: 20px 0;">
+            <h1>Leçon 1 : Introduction au Langage C</h1>
+            <p><strong>Par :</strong> Hassan Dao</p>
+        </header>
+
+        <section>
+            <h2>1. Qu'est-ce que le C ?</h2>
+            <p>Le C est un langage compilé, performant et très utilisé dans les systèmes embarqués et les systèmes d'exploitation.</p>
+
+            <h2>2. Structure d'un programme</h2>
+            <p>Voici votre premier programme qui affiche "Bonjour UTS" :</p>
+
+            <pre>
+<span class="comment">/* Mon premier programme en C */</span>
+<span class="keyword">#include</span> &lt;stdio.h&gt;
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="function">printf</span>(<span class="string">"Bonjour UTS !\n"</span>);
+    <span class="keyword">return</span> 0;
+}</pre>
+
+            <h2>3. Les étapes pour exécuter ce code</h2>
+            <ul>
+                <li><strong>Écriture :</strong> Utiliser un éditeur (comme Coding C).</li>
+                <li><strong>Compilation :</strong> Transformer le texte en binaire avec <code>gcc</code>.</li>
+                <li><strong>Exécution :</strong> Lancer le fichier obtenu.</li>
+            </ul>
+        </section>
+
+        <footer style="margin-top: 40px; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 20px;">
+            <p>Prochain cours : Les variables et les types de données.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
