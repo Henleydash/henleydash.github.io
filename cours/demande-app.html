@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposer un Projet | TechExpert</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* On garde la même structure mais on inverse les couleurs */
+        body { 
+            background-color: #ffffff !important; 
+            color: #333 !important; 
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f9f9f9; /* Fond légèrement grisé pour détacher du blanc */
+            border-radius: 15px;
+            border: 1px solid #ddd; /* Bordure claire */
+        }
+        
+        label { 
+            display: block; 
+            margin-bottom: 10px; 
+            color: #2563eb; /* Bleu pro pour les titres de champs */
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            color: #333;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        
+        textarea { height: 150px; resize: vertical; }
+        
+        .btn-envoyer {
+            width: 100%;
+            background-color: #27ae60; /* Ton bouton vert */
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .btn-envoyer:hover { 
+            background-color: #2ecc71; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <a href="../index.html" style="color: #666; text-decoration: none;">← Retour</a>
+        
+        <h2 style="margin-top: 20px;">Décrivez votre projet d'application</h2>
+        <p style="color: #666; margin-bottom: 30px;">Parlez-moi de votre idée, je vous recontacterai pour en discuter.</p>
+
+        <form action="https://formspree.io/f/mgonyonz" method="POST">
+            <label>Votre Nom / Entreprise</label>
+            <input type="text" name="nom" placeholder="Ex: Jean Dupont" required>
+
+            <label>Votre Email</label>
+            <input type="email" name="_replyto" placeholder="Ex: jean@mail.com" required>
+
+            <label>Votre Idée ou Projet</label>
+            <textarea name="message" placeholder="Décrivez les fonctionnalités de l'application..." required></textarea>
+
+            <button type="submit" class="btn-envoyer">Envoyer le projet</button>
+        </form>
+    </div>
+
+</body>
+</html>
