@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Python | UTS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Style "Light Mode" académique */
+        body { 
+            background-color: #f8fafc !important; 
+            color: #1e293b !important; 
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .course-container {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style des blocs de code Python */
+        pre {
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            border-left: 5px solid #f1c40f; /* Jaune Python */
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .py-keyword { color: #569cd6; font-weight: bold; } /* Mots-clés */
+        .py-func { color: #dcdcaa; }    /* Fonctions */
+        .py-string { color: #ce9178; }  /* Texte/Chaînes */
+        .py-comment { color: #6a9955; font-style: italic; } /* Commentaires */
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: #fff9db;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f1c40f;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="course-container">
+        <a href="programmation.html" class="btn-back">← Retour au choix du cours</a>
+
+        <header style="background: none; border: none; padding: 0; text-align: left;">
+            <h1 style="color: #0f172a; margin-bottom: 5px;">Python : Niveau Débutant 🐍</h1>
+            <p style="color: #64748b;">Module 1 : Introduction et premier script</p>
+        </header>
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+        <section>
+            <h2>1. Pourquoi Python à l'UTS ?</h2>
+            <p>Python est un langage <strong>interprété</strong>. Contrairement au C, vous n'avez pas besoin de gérer manuellement la mémoire. Sa syntaxe est simple, ce qui permet de se concentrer sur la logique algorithmique.</p>
+
+            <div class="highlight-box">
+                <strong>💡 Info :</strong> Python est massivement utilisé à l'université pour l'analyse de données et l'intelligence artificielle.
+            </div>
+
+            <h2>2. Votre premier programme</h2>
+            <p>En Python, pas besoin de <code>#include</code> ou de <code>main()</code> pour commencer. Une seule ligne suffit :</p>
+
+            <pre>
+<span class="py-comment"># Ceci est un commentaire en Python</span>
+<span class="py-func">print</span>(<span class="py-string">"Bonjour l'Université Thomas Sankara !"</span>)
+
+<span class="py-comment"># Calcul simple</span>
+resultat = 10 + 5
+<span class="py-func">print</span>(<span class="py-string">"Le résultat est :"</span>, resultat)</pre>
+
+            <h2>3. Comment pratiquer sur Android ?</h2>
+            <p>Pour coder en Python directement sur votre smartphone, je vous recommande d'installer l'application <strong>Pydroid 3</strong> disponible sur le Play Store. Elle inclut tout le nécessaire pour exécuter vos scripts sans ordinateur.</p>
+        </section>
+
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #94a3b8;">
+            <p>&copy; 2026 - TechExpert Formation Python</p>
+        </footer>
+    </div>
+
+</body>
+</html>
