@@ -21,7 +21,7 @@ body {
     
     /* Image de fond avec superposition sombre */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('header-bg.jpg');
+                url('/header-bg.jpg');
     
     background-size: cover;       /* L'image couvre tout l'espace */
     background-position: center;  /* L'image est centrée */
